@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main-grid{
+            display: grid;
+            height: 100%;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(3,1fr);
+        }
+        div{
+            background-color: lightgray;
+            height:300px;
+            border: 2px solid gray;
+        } 
+        .grid-card2{
+            display: grid;
+            grid-template-columns: repeat(2,50%);
+            grid-template-rows: repeat(2,50%);
+        }
+        .sub{
+            background-color: lightcoral;
+            height:auto;
+        }
+        .grid-card6{
+            display: grid;
+            grid-template-rows: repeat(2,50%);
+
+        }
+        .grid-card7{
+            display: grid;
+            grid-template-columns: repeat(2,50%);
+
+        }
+    </style>
+</head>
+<body>
+    <span class="main-grid">
+        <div class="grid-card1">item1</div>
+        <div class="grid-card2">
+            <div class="sub">sub1</div>
+            <div class="sub">sub2</div>
+            <div class="sub">sub3</div>
+            <div class="sub">sub4</div>
+        </div>
+        <div class="grid-card2">
+            <div class="sub">sub1</div>
+            <div class="sub">sub2</div>
+            <div class="sub">sub3</div>
+            <div class="sub">sub4</div>
+        </div>
+        <div class="grid-card4">item4</div>
+        <div class="grid-card5">item5</div>
+        <div class="grid-card6">
+            
+            <div class="sub">sub1</div>
+            <div class="sub">sub2</div>
+        
+        </div>
+        <div class="grid-card7">
+            
+            
+            <div class="sub">sub1</div>
+            <div class="sub">sub2</div>
+        
+        </div>
+        <div class="grid-card8">item8</div>
+        
+            <div class="grid-card2">
+                <div class="sub">sub1</div>
+                <div class="sub">sub2</div>
+                <div class="sub">sub3</div>
+                <div class="sub">sub4</div>
+            </div>
+       
+        <div class="grid-card10">item10</div>
+        <div class="grid-card11">item11</div>
+        <div class="grid-card2">
+            <div class="sub">sub1</div>
+            <div class="sub">sub2</div>
+            <div class="sub">sub3</div>
+            <div class="sub">sub4</div>
+        </div>
+
+
+    </span>
+</body>
+</html>

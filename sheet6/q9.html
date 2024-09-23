@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overlapping Grid Example</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            width: 300px;
+            height: 300px;
+            position: relative;
+        }
+
+        .box {
+            width: 150px;
+            height: 150px;
+            opacity: 0.8;
+            color: white;
+            display: flex;
+            justify-content: center;
+            position: absolute;
+        }
+
+        .top {
+            background-color: rgba(255, 0, 0, 0.8); /* Red */
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+
+        .middle {
+            background-color: rgba(0, 128, 0, 0.8); /* Green */
+            top: 75px;
+            left: 75px;
+        }
+
+        .bottom {
+            background-color: rgba(0, 0, 255, 0.8); /* Blue */
+            top: 150px;
+            left: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box top">Top</div>
+        <div class="box middle">Middle</div>
+        <div class="box bottom">Bottom</div>
+    </div>
+</body>
+</html>

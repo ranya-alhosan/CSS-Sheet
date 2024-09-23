@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(6,1fr);
+            width: 500px;
+            gap: 10px;
+            color: white;
+            font-weight: 200;
+            grid-template-areas: 
+            "header header header header"
+            "slide nav nav nav "
+            "slide article article article "
+            "slide article article article "
+            "slide article article article "
+            "footer footer footer footer"
+            ;
+
+        }
+        .header{
+            grid-area: header;
+            background-color: rgba(255, 255, 0, 0.89);
+            border-radius: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+        .nav{
+            grid-area: nav;
+            border-radius: 20px;
+            background-color: teal;
+            font-size: 30px;
+            text-align: center;
+
+
+        }
+        .sidebar{
+            grid-area: slide;
+            border-radius: 20px;
+            background-color: rgb(240, 134, 12);
+            text-align: center;
+            font-size: 30px;
+
+
+        }
+        .article{
+            grid-area: article;
+            text-align: center;
+            border-radius: 20px;
+            background-color: gray;
+            font-size: 30px;
+
+
+        }
+        .footer{
+            grid-area: footer;
+            text-align: center;
+            border-radius: 20px;
+            background-color: rgb(86, 84, 84);
+            font-size: 30px;
+
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="nav">Nav</div>
+        <div class="sidebar">Sidebar</div>
+        <div class="article">Article</div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>

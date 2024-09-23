@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main-page{
+            display: grid;
+            grid-template-areas:
+            "search-area search-area search-area search-area",
+            "left-side-area icon-area icon-area icon-area",
+            "left-side-area center-area center-area center-area ",
+            "left-side-area center-area  center-area  center-area ",
+            ; 
+        }
+        .search-grid{
+            grid-area: search-area;
+        }
+        .icon-grid{
+            grid-area: icon-area;
+        }
+        .left-side-grid{
+            grid-area:left-side-area ;
+        }
+        .center-grid{
+            grid-area: center-area;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-page">
+       <div class="search-grid">
+        <div class="left-of-search">
+          <img class="img-icon" src="./menu (1).png">
+          <img class="img-icon" src="./youtube.png">
+          <img>
+         </div>
+         <div class="search">
+
+           <input type="text" placeholder="Search" class="search-style">
+            <img class="search-icon" src="./search.png">
+            <img class="search-icon" src="./mic.png">
+
+         </div>
+          <div class="right-of-search">
+            <img src="./video.png" class="img-icon">
+            <img src="bell.png" class="img-icon"> 
+            <div class="google-account">r</div>
+          </div>
+       </div>
+       <div class="icon-grid">
+        <div class="icon-flex">
+            <img>
+            <img>
+            <img>
+            <img>
+            <img>
+            <img>
+            <img>
+            <img>
+            <img>
+            <img>
+            <img>
+            <img>
+            <img>
+        </div>
+        
+       </div>
+       <div class="left-side-grid">
+        <div class="left-side-flex">
+            <img>
+            <img>
+            <img>
+            <img>
+        </div>
+        
+       </div>
+       <div class="center-grid">
+         <div class="video-card"></div>
+         <div class="video-card"></div>
+         <div class="video-card"></div>
+         <div class="video-card"></div>
+         <div class="video-card"></div>
+         <div class="video-card"></div>
+       </div>
+    </div>
+</body>
+</html>

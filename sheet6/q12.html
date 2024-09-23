@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main-grid{
+            display: grid;
+            width: 100%;
+            grid-template-columns: repeat(4,1fr);
+                 grid-template-rows: repeat(2 ,1fr);
+          grid-gap: 10px;
+        }
+        .card-flex{
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+            
+            padding: 15px;
+
+        }
+        .image-card{
+            width:150px;
+            height: 150px;
+            margin: 5px;
+        }
+        .buy-botton{
+            border-radius: 10px;
+            background-color: lightseagreen;
+            color: white;
+            font-size: 20px;
+            padding: 5px;
+            width: 70%;
+            text-align: center;
+            
+        }
+       
+    </style>
+</head>
+<body>
+    
+        <div class="main-grid">
+            <div class="card-flex">
+                <img src="./computer.png" class="image-card">
+                <h2>Lorem, ipsum dolor.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, praesentium!</p>
+                <ul>
+                    <li>Lorem, ipsum.</li>
+                    <li>Lorem, ipsum.</li>
+                    <li>Lorem, ipsum.</li>
+                    <li>Lorem, ipsum.</li>
+                 
+                </ul>
+                <a class="buy-botton">Buy now</a>
+            </div>
+            <div class="card-flex">
+                <img src="./writing.png" class="image-card">
+                <h2>Lorem, ipsum dolor.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, praesentium!</p>
+                <ul>
+                    <li>Lorem, ipsum.</li>
+                </ul>
+                <a class="buy-botton">Buy now</a>
+            </div>
+            <div class="card-flex">
+                <img src="./writing.png" class="image-card">
+                <h2>Lorem, ipsum dolor.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, praesentium!</p>
+                <a class="buy-botton">Buy now</a>
+            </div>
+            <div class="card-flex">
+                <h2>Lorem, ipsum dolor.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, praesentium!</p>
+                <a class="buy-botton">Buy now</a>
+            </div>
+            <div class="card-flex">
+                <img src="./computer.png" class="image-card">
+                <h2>Lorem, ipsum dolor.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, praesentium!</p>
+                <a class="buy-botton">Buy now</a>
+            </div>
+        </div>
+ 
+</body>
+</html>

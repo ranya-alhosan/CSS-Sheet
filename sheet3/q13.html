@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .all{
+            margin-left:100px ;
+            margin-right:100px ;
+        }
+       .head{
+        text-align: center;
+       }
+       .page-title{
+        color: red;
+       }
+       .nav-items{
+        background-color: gray;
+        border: 2px solid black;
+        border-radius: 20px;
+        text-align: center;
+        padding-top: 20px;
+       }
+       .logo{
+        width: 40px;
+        height: 40px;
+       }
+       ul{
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+       }
+       li{
+        margin-right: 20px;
+        color: white;
+       }
+       .main-contant{
+        background-image: url('./background.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 50vh;
+        border: 2px solid black;
+        border-bottom-left-radius: 50px;
+        text-align: center;
+       }
+       .title-main{
+        color: black;
+        font-weight: 700;
+        font-size: 30px;
+       }
+       .btn{
+        border: 1px solid white;
+        background-color: yellow;
+        border-radius: 20px;
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: 800;
+       }
+       .image-main{
+        position: relative;
+   margin: 60px;
+    justify-content: center; 
+    align-items: center;     
+    width: 250px;            
+    height: 100px; 
+   
+
+       }
+    .total-image{
+        display: flex;
+    }
+       .abs{
+        position: absolute;
+       
+       }
+       .img{
+        height: 100px;
+        width: 250px;
+        position: absolute;
+       }
+       .position1{
+        z-index: 1;
+       }
+       .position2{
+        z-index: 2;
+        bottom: 10px;       
+        left: 85%;          
+        transform: translateX(50%); 
+   
+       }
+       .img{
+        border: 2px solid black;
+        border-radius: 30px;
+        box-shadow: 20px;
+        box-shadow: 0px 0px 20px  black;
+       }
+       .copy{
+        text-align: center;
+       }
+       .imgf{
+        height: 250px;
+        width: 200px;
+        border: 2px solid black;
+        border-radius: 20px;
+       }
+       .total-footer-image{
+        display: flex;
+        position: relative;
+        justify-content: space-around;
+       }
+       .page-title{
+        text-align: center;
+       }
+       .fo{
+        margin: 0 auto;
+       }
+      .order-buttom{
+        margin-left: 60px;
+       
+      }
+    </style>
+</head>
+<body>
+    <div class="all">
+        <div class="head">
+            <h1 class="page-title">Online </h1>
+            <h3>Foodshop</h3>
+    
+        </div><hr>
+        <div class="main">
+         <nav class="nav-items">
+        <div><img  src="cake3.jpg" class="logo"></div>
+        <div >
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Menu</li>
+                <li>ContactUs</li>
+            </ul>
+        </div>
+          </nav>
+            <div class="main-contant">
+                <div>
+                    <p class="title-main">Welcome to Online  FoodShop</p>
+                    <a  class="btn"  href="">ORDER NOW</a>
+                </div>
+
+                <span class="total-image">
+                    <div class="image-main">
+                        <img  class="img abs position1" src="./cake3.jpg">
+                        <a class="btn abs position2"  href=""> Prices</a>
+                    </div>
+                    <div class="image-main">
+                        <img class="img abs position1" src="./cupcake.jpg">
+                        <a class="btn abs position2"   href=""> Prices</a>
+                    </div>
+                </span>
+           
+          </div>
+        </div><hr>
+        <div class="footer">
+            <h2 class="page-title">Online</h2>
+            <div class="total-footer-image">
+                <div class="image-footer">
+                    <img class="imgf " src="./cupcake.jpg"><br>
+                    <a class="btn  order-buttom" href=""> Order now</a>
+                 </div>
+                 <div class="image-footer">
+                    <img class="imgf "  src="./dount2.jpg"><br>
+                    <a  class="btn order-buttom  " href=""> Order now</a>
+                 </div>
+                 <div class="image-footer">
+                    <img class="imgf  " src="./cupS.jpg"><br>
+                    <a  class="btn order-buttom" href=""> Order now </a>
+                 </div>
+            </div>
+        <p class="copy">Copyright &copy; 2020-2021 Oline FoodShop.All Rights are reserved</p>
+        </div>
+    </div>
+    
+</body>
+</html>

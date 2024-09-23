@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Relative & Static</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 600vh; 
+            flex-direction: column;
+        }
+
+        h1 {
+            margin-bottom: 200px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 100px);
+            grid-gap: 20px;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            color: white;
+            font-weight: bold;
+            background-color: lightcoral;
+        }
+
+        #box1 {
+            background-color: #ff6b6b;
+            z-index: 2;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        #box5 {
+            position: sticky;
+            top: 20px; /* Starts sticking when 20px from the top */
+            background-color: #ffe66d;
+        }
+
+        .words {
+            height: 300vh; 
+        }
+
+    
+        .box:nth-child(2) { background-color: #4ecdc4; }
+        .box:nth-child(3) { background-color: #1a535c; }
+        .box:nth-child(4) { background-color: #ff6b6b; }
+        .box:nth-child(5) { background-color: #ffe66d; }
+        .box:nth-child(6) { background-color: #ff6b6b; }
+        .box:nth-child(7) { background-color: #4ecdc4; }
+        .box:nth-child(8) { background-color: #1a535c; }
+        .box:nth-child(9) { background-color: #ffe66d; }
+        .box:nth-child(10) { background-color: #ff6b6b; }
+        .box:nth-child(11) { background-color: #4ecdc4; }
+        .box:nth-child(12) { background-color: #1a535c; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box" id="box5">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>
+        <div class="box">10</div>
+        <div class="box">11</div>
+        <div class="box">12</div>
+    </div>
+
+    <div class="words">
+        <h1>Hello world</h1>
+        <h1>Hello world</h1>
+    </div>
+
+</body>
